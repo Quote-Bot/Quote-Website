@@ -21,17 +21,17 @@
                         <li class="nav-item active">
                             <a class="nav-link" asp-controller="home" asp-action="index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" asp-controller="home" asp-action="privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="home" asp-action="license">License</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://twitter.com/QuoteDiscord">Twitter</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" asp-controller="home" asp-action="about">About</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://twitter.com/QuoteDiscord" target="_blank">Twitter <img class="rounded-circle" src="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" height="23" width="23" /></a>
+                                <a class="dropdown-item" href="https://github.com/Quote-Bot/Quote" target="_blank">GitHub <img class="rounded-circle" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="23" width="23" /></a>
+                                <a class="dropdown-item" asp-controller="home" asp-action="license">License</a>
+                                <a class="dropdown-item" asp-controller="home" asp-action="privacy">Privacy</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" asp-controller="selfhosting" asp-action="index">Selfhosting</a>
+                            <a class="nav-link dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" asp-controller="selfhosting" asp-action="index">Selfhosting</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item disabled" asp-controller="selfhosting" asp-action="linux">Linux</a>
                                 <a class="dropdown-item disabled" asp-controller="selfhosting" asp-action="windows">Windows</a>
