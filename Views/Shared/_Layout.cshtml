@@ -22,14 +22,20 @@
                             <a class="nav-link" asp-controller="home" asp-action="index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="home" asp-action="privacy">Privacy</a>
+                            <a class="nav-link disabled" asp-controller="home" asp-action="privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="home" asp-action="license">License</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/QuoteDiscord">Twitter</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" asp-controller="selfhosting" asp-action="index">Selfhosting</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" asp-controller="selfhosting" asp-action="linux">Linux</a>
-                                <a class="dropdown-item" asp-controller="selfhosting" asp-action="windows">Windows</a>
-                                <a class="dropdown-item" asp-controller="selfhosting" asp-action="faq">FAQ</a>
+                                <a class="dropdown-item disabled" asp-controller="selfhosting" asp-action="linux">Linux</a>
+                                <a class="dropdown-item disabled" asp-controller="selfhosting" asp-action="windows">Windows</a>
+                                <a class="dropdown-item disabled" asp-controller="selfhosting" asp-action="faq">FAQ</a>
                             </div>
                         </li>
                     </ul>
