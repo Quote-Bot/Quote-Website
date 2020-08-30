@@ -9,7 +9,7 @@ Before you even think of editing anything, check if any branches by the name of 
 
 If you'd like to edit, let's say the `Linux` selfhosting guide, there is a list of requirements you must meet before editing.
 
-- [ ] 1. Is your edit contributing to the site? (Adding pages like "Credits" and adding yourself to it is not )
+- [ ] 1. Is your edit contributing to the site? (Adding pages like "Credits" and adding yourself to it is not contributing to the website.)
 - [ ] 2. Is your edit a minor? (Grammar fix, rewording, etc.)
 - [ ] 3. Is your edit of dire importance? (Site breaking when clicking X and Y)
 - [ ] 4. Is your edit going to break the site?
