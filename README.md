@@ -10,7 +10,7 @@ Before you even think of editing anything, check if any branches by the name of 
 If you'd like to edit, let's say the `Linux` selfhosting guide, there is a list of requirements you must meet before editing.
 
 - [ ] 1. Is your edit contributing to the site? (Adding pages like "Credits" and adding yourself to it is not contributing to the website.)
-- [ ] 2. Is your edit a minor? (Grammar fix, rewording, etc.)
+- [ ] 2. Is your edit minor? (Grammar fix, rewording, etc.)
 - [ ] 3. Is your edit of dire importance? (Site breaking when clicking X and Y)
 - [ ] 4. Is your edit going to break the site?
 - [ ] 5. Are the elements of the page you edited consistent with the rest of the website?
@@ -25,7 +25,7 @@ Example:
 
 ```md
 - [X] 1. Is your edit contributing to the site? (Adding pages like "Credits" and adding yourself to it is not contributing to the website.)
-- [X] 2. Is your edit a minor? (Grammar fix, rewording, etc.)
+- [X] 2. Is your edit minor? (Grammar fix, rewording, etc.)
 - [ ] 3. Is your edit of dire importance? (Site breaking when clicking X and Y)
 - [ ] 4. Is your edit going to break the site?
 - [X] 5. Are the elements of the page you edited consistent with the rest of the website?
