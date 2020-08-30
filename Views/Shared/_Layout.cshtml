@@ -25,13 +25,6 @@
                             <a class="nav-link" asp-controller="commands" asp-action="index">Commands</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" asp-controller="home" asp-action="license">License</a>
-                                <a class="dropdown-item" asp-controller="home" asp-action="privacy">Privacy</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="https://discord.gg/vkWyTGa" target="_blank"><img class="rounded-circle" src="https://e7.pngegg.com/pngimages/574/586/png-clipart-discord-computer-icons-logo-computer-software-others-miscellaneous-blue.png" height="23" width="23" /> Discord</a>
@@ -47,6 +40,13 @@
                                 <a class="dropdown-item disabled" asp-controller="selfhosting" asp-action="faq">FAQ</a>
                             </div>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="home" asp-action="license">License</a>
+                                <a class="dropdown-item" asp-controller="home" asp-action="privacy">Privacy</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             <div class="alert alert-dismissible alert-warning">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <h4 class="alert-heading"><b>Attention!</b></h4>
-                <p class="mb-0">This site is still currently under development! If you notice any errors, please report it to <b>kagerou#0192</b> on Discord!</p>
+                <p class="mb-0">This site is currently under development! If you notice any errors, please open an issue on <a href="https://github.com/Quote-Bot/Quote-Website/issues/new" target="_blank"><b>GitHub</b></a>!</p>
             </div>
             @RenderBody()
         </main>
