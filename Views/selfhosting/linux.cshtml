@@ -4,7 +4,7 @@
 
 <div class="text-center">
     <h1 class="display-4">Linux Hosting</h1>
-    <h5>On this page, you will learn how to host Quote on your own.</h5>
+    <h5>On this page, you will learn how to host Quote bot on your Linux device/server.</h5>
     <hr />
 </div>
 
@@ -53,5 +53,29 @@
 
 <h2><b>Step 3: Editing Credentials</b></h2>
 
-<h5 class="text-ceneter">Work in Progress</h5>
-<h5 class="text-center">creds.json</h5>
+<h5 class="text-center">Now that you have Quote bot actually installed, it is time to edit the credential.</h5>
+<h5 class="text-center">Before we get into it, there are a few things you should have at hand. These consist of an <b>Owner ID</b> and a <b>Bot Token</b>.</h5>
+<h5 class="text-center"><i>Refer to the <a asp-controller="selfhosting" asp-action="faq">FAQ (Frequently Asked Questions)</a> on how to obtain these.</i></h5>
+<h5 class="text-center">First and foremost, to go to the directory where <a style="background-color: dimgray; color: lightskyblue;">credentials.json</a> is located, run the following command which will also immediately enter edit mode for the file:</h5>
+<div class="text-center" style="background-color: dimgray; color: lightskyblue;">
+    <p>cd QuoteBot/QuoteBot/configs && nano credentials.json</p>
+    <img class="img-fluid" src="~/wwwroot/nano credentials.json view.png" />
+</div>
+<h5 class="text-center">Press <b>CTRL + X</b>, then <b>y</b> and thereafter the Enter key to save the <a style="background-color: dimgray; color: lightskyblue;">credentials.json</a> file.</h5>
+
+<hr />
+
+<h2><b>Step 4: Running Quote</b></h2>
+
+<h5 class="text-center">Almost done. All that's left to do is run Quote. To do so, run the launcher and press option <b>1</b>.</h5>
+<div class="text-center" style="background-color: dimgray; color: lightskyblue;">
+    <p>sh quote_launcher.sh</p>
+    <p>1</p>
+</div>
+<h5 class="text-center">And that is it! You have succesfully set up your own Quote bot for Linux in matter of minutes.</h5>
+
+<hr />
+
+<h2><b>Found a bug?</b></h2>
+
+<h5 class="text-center">If you've found a bug in a script or on this page, please join the <a href="https://discord.gg/vkWyTGa">Official Support Server</a> and ask for help in the <b>#support</b> channel.</h5>
