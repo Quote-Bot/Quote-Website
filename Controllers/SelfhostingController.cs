@@ -18,9 +18,6 @@ namespace Quote_Website.Controllers
             _logger = logger;
         }
 
-        public IActionResult index()
-            => View();
-
         public IActionResult linux()
             => View();
 

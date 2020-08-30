@@ -4,36 +4,42 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Quote</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/wwwroot/css/site.css" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="home" asp-action="index"><img src="~/wwwroot/quote.png" class="rounded-circle" /></a>
+                <a class="navbar-brand" asp-area="" asp-controller="home" asp-action="index"><img src="~/wwwroot/quote.png" class="rounded-circle" height="35" width="35" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav d-flex">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" asp-controller="home" asp-action="index">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" asp-controller="home" asp-action="about">About</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="https://twitter.com/QuoteDiscord" target="_blank">Twitter <img class="rounded-circle" src="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" height="23" width="23" /></a>
-                                <a class="dropdown-item" href="https://github.com/Quote-Bot/Quote" target="_blank">GitHub <img class="rounded-circle" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="23" width="23" /></a>
                                 <a class="dropdown-item" asp-controller="home" asp-action="license">License</a>
                                 <a class="dropdown-item" asp-controller="home" asp-action="privacy">Privacy</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" asp-controller="selfhosting" asp-action="index">Selfhosting</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item disabled" asp-controller="selfhosting" asp-action="linux">Linux</a>
+                                <a class="dropdown-item" href="https://discord.gg/vkWyTGa" target="_blank"><img class="rounded-circle" src="https://e7.pngegg.com/pngimages/574/586/png-clipart-discord-computer-icons-logo-computer-software-others-miscellaneous-blue.png" height="23" width="23" /> Discord</a>
+                                <a class="dropdown-item" href="https://twitter.com/QuoteDiscord" target="_blank"><img class="rounded-circle" src="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" height="23" width="23" /> Twitter</a>
+                                <a class="dropdown-item" href="https://github.com/Quote-Bot/QuoteBot" target="_blank"><img class="rounded-circle" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="23" width="23" /> GitHub</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Selfhosting</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="selfhosting" asp-action="linux">Linux</a>
                                 <a class="dropdown-item disabled" asp-controller="selfhosting" asp-action="windows">Windows</a>
                                 <a class="dropdown-item disabled" asp-controller="selfhosting" asp-action="faq">FAQ</a>
                             </div>
@@ -59,9 +65,37 @@
             &copy; @DateTime.Now.Year - Kagerou, Deivedux
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/wwwroot/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
+<script>
+    const $dropdown = $(".dropdown");
+    const $dropdownToggle = $(".dropdown-toggle");
+    const $dropdownMenu = $(".dropdown-menu");
+    const showClass = "show";
+
+    $(window).on("load resize", function () {
+        if (this.matchMedia("(min-width: 768px)").matches) {
+            $dropdown.hover(
+                function () {
+                    const $this = $(this);
+                    $this.addClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+                    $this.find($dropdownMenu).addClass(showClass);
+                },
+                function () {
+                    const $this = $(this);
+                    $this.removeClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+                    $this.find($dropdownMenu).removeClass(showClass);
+                }
+            );
+        } else {
+            $dropdown.off("mouseenter mouseleave");
+        }
+    });
+</script>
