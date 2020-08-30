@@ -18,6 +18,7 @@ If you'd like to edit, let's say the `Linux` selfhosting guide, there is a list 
 
 If you meet all of the listed requirements, your next course of action is to open a pull request and edit what you wish to edit.
 You are then to copy-paste the list from above and put X/leave empty where it belongs.
+
 Example:
 
 
@@ -31,5 +32,7 @@ Example:
 - [X] 5. Are the elements of the page you edited consistent with the rest of the website?
 - [X] 6. Are the elements of the page you edited Bootstrap?
 ```
+
+A good example of what has been said above can be found [here](https://github.com/Quote-Bot/Quote-Website/pull/1).
 
 ---
