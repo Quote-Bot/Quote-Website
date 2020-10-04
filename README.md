@@ -34,7 +34,7 @@ In this Pull Request, I changed X and Y.
 - [X] 5. Are the elements of the page you edited consistent with the rest of the website?
 - [X] 6. Are the elements of the page you edited Bootstrap?
 
-[L#1](link to the commit) - X Y Z
+[L#1](link to the commit line) - X Y Z
 ```
 
 A good example of what has been said above can be found [here](https://github.com/Quote-Bot/Quote-Website/pull/2).
