@@ -37,6 +37,6 @@ In this Pull Request, I changed X and Y.
 [L#1](link to the commit) - X Y Z
 ```
 
-A good example of what has been said above can be found [here](https://github.com/Quote-Bot/Quote-Website/pull/1).
+A good example of what has been said above can be found [here](https://github.com/Quote-Bot/Quote-Website/pull/2).
 
 ---
