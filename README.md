@@ -25,12 +25,16 @@ Example:
 #### Pull Request 31: Fixing the Linux page wording.
 
 ```md
+In this Pull Request, I changed X and Y.
+
 - [X] 1. Is your edit contributing to the site? (Adding pages like "Credits" and adding yourself to it is not contributing to the website.)
 - [X] 2. Is your edit minor? (Grammar fix, rewording, etc.)
 - [ ] 3. Is your edit of dire importance? (Site breaking when clicking X and Y)
 - [ ] 4. Is your edit going to break the site?
 - [X] 5. Are the elements of the page you edited consistent with the rest of the website?
 - [X] 6. Are the elements of the page you edited Bootstrap?
+
+[L#1](link to the commit) - X Y Z
 ```
 
 A good example of what has been said above can be found [here](https://github.com/Quote-Bot/Quote-Website/pull/1).
