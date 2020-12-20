@@ -8,4 +8,8 @@
     <Authors>Quote Bot</Authors>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\installer\" />
+  </ItemGroup>
+
 </Project>
