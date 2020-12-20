@@ -4,4 +4,156 @@
 
 <div class="text-center">
     <h1 class="display-4">Work In Progress</h1>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead class="text-white thead-dark">
+                <tr>
+                    <th>Command Name &amp; Aliases</th>
+                    <th>Command Description</th>
+                    <th>Usage</th>
+                    <th>Permissions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>help</td>
+                    <td>Shows the help message, or more details on a specific command.</td>
+                    <td>help [command]</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>clone</td>
+                    <td>Clone up to 50 messages from one channel to another using a webhook.</td>
+                    <td>clone [msg limit] [channel]</td>
+                    <td class="permission-cell">Manage Webhooks</td>
+                </tr>
+                <tr>
+                    <td>quote, q</td>
+                    <td>Quote a message using a message ID or link</td>
+                    <td>q 12354678900</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>personalset, pset</td>
+                    <td>Set a Personal Quote that you can quote in any mutual server.</td>
+                    <td>personalset abc [message-link]</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>personalremove, premove, pdelete, pdel</td>
+                    <td>Remove the specified Personal Quote.</td>
+                    <td>pdel abc</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td><br>personalquote, personal, pquote, pq<br><br></td>
+                    <td><br>Send the specified Personal Quote.<br><br></td>
+                    <td>pq abc</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>personallist, plist</td>
+                    <td>List your Personal Quotes.</td>
+                    <td>plist</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>personalcopy, pcopy</td>
+                    <td>Copy a Personal/Server Quote so you can use it yourself.</td>
+                    <td>pcopy 123456789 abc</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>personalclear, pclear</td>
+                    <td>Remove all of your Personal Quotes.</td>
+                    <td>pclear</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>serverset, sset</td>
+                    <td>Set a Server Quote that can be quoted in this server.</td>
+                    <td>sset acd [message-link]</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>serverremove, sremove, sdelete, sdel</td>
+                    <td>Remove the specified Server Quote.</td>
+                    <td>sdel acd</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>serverquote</td>
+                    <td>Send the specified Server Quote.</td>
+                    <td>sq acd</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>serverlist, slist</td>
+                    <td>List the Server Quotes.</td>
+                    <td>slist</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>servercopy, scopy</td>
+                    <td>Copy a Personal/Server Quote so it can be quoted in this server.</td>
+                    <td>scopy 123456789 acd</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>serverclear, sclear</td>
+                    <td>Remove all Server Quotes.</td>
+                    <td>sclear</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>snipe</td>
+                    <td>Snipe the last deleted message from a specified channel or the current channel.</td>
+                    <td>snipe #channel</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>snipeedit</td>
+                    <td>Snipe the last edited message from a specified channel or the current channel.<br></td>
+                    <td>snipeedit #channel</td>
+                    <td class="permission-cell"></td>
+                </tr>
+                <tr>
+                    <td>toggledelete, delcommands, delete</td>
+                    <td>Toggle deleting quote command messages in the server.</td>
+                    <td>toggledelete</td>
+                    <td class="permission-cell">Manage Server</td>
+                </tr>
+                <tr>
+                    <td>togglelinks, links</td>
+                    <td>Toggle quoting linked messages in the server.</td>
+                    <td>togglelinks</td>
+                    <td class="permission-cell">Manage Server</td>
+                </tr>
+                <tr>
+                    <td>togglereaction, togglereactions, togglereact, reactions</td>
+                    <td>Toggle quoting by adding&nbsp;💬 reactions to messages in the server.<br></td>
+                    <td>togglereact</td>
+                    <td class="permission-cell">Manage Server</td>
+                </tr>
+                <tr>
+                    <td>setlang, language, setlang, lang, localize</td>
+                    <td>Set the language for the server.<br></td>
+                    <td>setlang en-US</td>
+                    <td class="permission-cell">Manage Server</td>
+                </tr>
+                <tr>
+                    <td>setprefix, prefix</td>
+                    <td>Set the command prefix for the server.<br></td>
+                    <td>setprefix ;</td>
+                    <td class="permission-cell">Manage Server</td>
+                </tr>
+                <tr>
+                    <td>shutdown</td>
+                    <td>Shut down the bot (owner only).</td>
+                    <td>shutdown</td>
+                    <td class="permission-cell">Owner Only</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
