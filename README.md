@@ -19,8 +19,9 @@ If you'd like to edit, let's say the `Linux` selfhosting guide, there is a list 
 If you meet all of the listed requirements, your next course of action is to open a pull request and edit what you wish to edit.
 You are then to copy-paste the list from above and put X/leave empty where it belongs.
 
-Example:
+<br />
 
+### Example:
 
 #### Pull Request 31: Fixing the Linux page wording.
 
@@ -36,6 +37,8 @@ In this Pull Request, I changed X and Y.
 
 [L#1](link to the commit line) - X Y Z
 ```
+
+<br />
 
 A good example of what has been said above can be found [here](https://github.com/Quote-Bot/Quote-Website/pull/2).
 
